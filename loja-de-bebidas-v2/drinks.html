@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cervejaria do Pericles</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <ul>
+          <li>A cervejaria</li>
+          <li>Nossa cerveja</li>
+          <li>Delivery</li>
+        </ul>
+        <div id="car" onclick="showresults()">
+          <p>Meu carrinho</p>
+          <img src="/loja-de-bebidas/images/car.svg" />
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="container">
+        <img src="/loja-de-bebidas/images/cerveja.png" alt="copo de bebida" />
+        <p>
+          Olá! Gostaria de te dar boas vindas à Cervejaria do Pericles. Escolha
+          a bebida que mais te agrada:
+        </p>
+      </section>
+      <section id="drinks">
+        <div id ="wineprice">
+          <img src="./images/vino.png">
+          <p>Vinho Tinto <br> R$ 80,00</p>
+          <button onclick="buywine()">Comprar</button>
+        </div>
+        <div id ="beerprice">
+          <img src="./images/beer.png">
+          <p > Cerveja Heineken<br> R$ 20,00</p>
+          <button onclick="buybeer()">Comprar</button>
+        </div>
+        <div id ="refriprice">
+          <img src="./images/refri.png">
+          <p>Refrigerante Guaraná <br> R$ 10,00</p>
+          <button onclick="buyrefri()">Comprar</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
