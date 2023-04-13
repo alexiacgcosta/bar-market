@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cervejaria do Pericles</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script type="text/javascript" src="main.js"></script>
+    <script>
+      function pagmaior() {
+        window.location.href = "maior.html"
+      }
+      function pagmenor() {
+        window.location.href = "menor.html"
+      }
+   
+    </script>
   </head>
   <body>
     <main>
       <header>
         <h1>Bem-vindo à Cervejaria do Pericles Delivery</h1>
       </header>
-      <section id="container">
-        <img src="./images/cerveja.png" alt="copo de bebida" />
-        <p>Olá! Gostaria de te dar boas vindas à Cervejaria do Pericles. Escolha a bebida que mais te agrada:</p>
+      <section>
+        <img src="/loja-de-bebidas/images/cerveja.png" alt="copo de bebida" />
+        <p>Você é maior de 18 anos?</p>
         <form  method="get">
-          <input value="Sim"  onclick="pagmaior()"></input>
+          <input value="Sim" onclick="pagmaior()"></input>
           <input value="Não" onclick="pagmenor()"></input>
         </div>
       </section>
