@@ -91,6 +91,10 @@ input:hover {
   background: #9d6a03;
 }
 
+button:hover {
+  color: #9d6a03;
+}
+
 #container img {
   width: 150px;
   margin-top: -50px;

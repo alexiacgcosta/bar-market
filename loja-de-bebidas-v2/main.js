@@ -1,34 +1,41 @@
 function pagmaior() {
-  window.location.href = "drinks.html"
+  window.location.href = "drinks.html?age=true"
 
 }
 function pagmenor() {
-  window.location.href = "drinks.html"
-  document.getElementById("wineprice").hidden = true;
-  document.getElementById("beerprice").hidden = true;
+  window.location.href = "drinks.html?age=false"
 }
 
 
-var car = [];
-var price
+let car = [];
 
 function buywine() {
-  car.push(80)
+  car.push(80);
+  console.log(car);
 }
 
 function buybeer() {
-  car.push(20)
+  car.push(20);
+  console.log(car);
 }
 
 function buyrefri() {
-  car.push(10)
+  car.push(10);
+  console.log(car);
 }
 
 function showresults() {
-  window.location.href = "price.html"
-  for (car[0]; car.length; car++) {
-    price =+ car;
+  let price = 0;
+
+  if (car.length > 0) {
+  for (let i = 0; i < car.length; i++) {
+    price =+ car[i];
   }
-  var finalprice = document.getElementById("finalprice")
-  finalprice.innerHTML = "R$" + price
+  }
+  
+  if (price > 0) {
+    const value = localStorage.getItem("price");
+    localStorage.setItem('price', Number(value) + price);
+  }
+  window.location.href = "price.html";
 }
